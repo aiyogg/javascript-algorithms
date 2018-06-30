@@ -4,8 +4,13 @@
   "description": "Javascript Algorithms",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./src/*",
     "test": "jest"
   },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/DOTA2mm/javascript-algorithms.git"
