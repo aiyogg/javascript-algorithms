@@ -13,8 +13,8 @@ export default class Comparator {
 
   /**
    * 默认比较函数
-   * @param {(String | Number)} a 
-   * @param {(String | Number)} b 
+   * @param {(String | Number)} a
+   * @param {(String | Number)} b
    */
   static defaultCompareFunction (a, b) {
     if (a === b) {
