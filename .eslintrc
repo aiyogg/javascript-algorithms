@@ -6,5 +6,8 @@
   ],
   "env": {
     "jest/globals": true
+  },
+  "rules": {
+    "semi": "off"
   }
 }

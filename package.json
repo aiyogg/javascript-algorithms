@@ -4,7 +4,7 @@
   "description": "Javascript Algorithms",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src/*",
+    "lint": "eslint ./src/**/*",
     "test": "jest"
   },
   "pre-commit": [
