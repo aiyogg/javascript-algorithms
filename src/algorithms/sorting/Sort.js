@@ -1,4 +1,4 @@
-import Comparator from '../utils/comparator/Comparator'
+import Comparator from '../../utils/comparator/Comparator'
 
 /**
  * @typedef {Object} SorterCallbacks
@@ -21,7 +21,7 @@ export default class Sort {
     const stubCallback = () => {}
 
     callbacks.compareCallback = callbacks.compareCallback || undefined
-    callbacks.visitingCallback = callbacks.visitingCallback || stubCallback;
+    callbacks.visitingCallback = callbacks.visitingCallback || stubCallback
 
     return callbacks
   }
