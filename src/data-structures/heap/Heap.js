@@ -6,7 +6,7 @@ import Comparator from '../../utils/comparator/Comparator'
 
 export default class Heap {
   constructor (comparatorFunction) {
-    if (new.target !== Heap) {
+    if (new.target === Heap) {
       throw new TypeError('Cannot construct Heap instance directly')
     }
     // 堆容器
@@ -39,7 +39,7 @@ export default class Heap {
    * @requires {number}
    */
   getParentIndex (childIndex) {
-    return Math.floor(childIndex - 1) / 2
+    return Math.floor((childIndex - 1) / 2)
   }
 
   /**
@@ -99,7 +99,7 @@ export default class Heap {
    */
   swap (indexOne, indexTwo) {
     const tmp = this.heapContainer[indexTwo]
-    this.heapContainer[indexTwo] = this.heapContainerp[indexOne]
+    this.heapContainer[indexTwo] = this.heapContainer[indexOne]
     this.heapContainer[indexOne] = tmp
   }
 
@@ -191,7 +191,7 @@ export default class Heap {
   }
 
   toString () {
-    return this.heapContainer.toString
+    return this.heapContainer.toString()
   }
 
   /**
